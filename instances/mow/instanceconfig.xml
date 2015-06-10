@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<GenRoBag>
+	<db dbname="mow"/>
+	<packages>
+		<gnrcore_sys pkgcode="gnrcore:sys"/>
+		<gnrcore_adm pkgcode="gnrcore:adm"/>
+		<mow pkgcode="mow"/>
+	</packages>
+    <menu package="mow"/>
+	<authentication pkg="gnrcore:sys">
+		<py_auth defaultTags="user" method="authenticate" pkg="adm"/>
+        <xml_auth defaultTags="users,xml">
+            <developer pwd="d3v3l0p3r" tags="_DEV_,_TRD_,super_adm,user,admin,staff,passpartout,_pref,hosting"/>
+        </xml_auth>
+
+	</authentication>
+</GenRoBag>
